@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responder con sinceridad</title>
+    <style>
+        *{padding:0;margin:0;}
+        body{display: flex;font-family: sans-serif;padding: 14px;}
+        h1{margin:auto;margin-top:200px;}
+        p{color: rgba(255,0,0,0.5);text-align: center;}
+        .button{
+            position:absolute;
+            top:50%;
+            transform:translateY(-50%);
+            text-decoration:none;
+            background:#e91e63;
+            color:#ffff;
+            padding:20px 25px;
+            font-size:20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 21%);
+        }
+        #si{left:25%;transform:translateY(-50%);transform:translateX(-20%);}
+        #no{left:73%;transform:translateY(-50%);transform:translateX(-80%);}
+        @media (max-width: 600px) {
+            h1{margin:auto;margin-top:150px;}
+        }
+        @media (max-width: 420px) {
+            #si{left:15%;transform:translateY(-50%);transform:translateX(-15%);}
+            #no{left: 68%;transform: translateY(-50%);transform: translateX(-39%);}
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <p style="color:rgba(255,0,0,0.5);">¿Liz quieres permanecer conmigo toda la vida?<br>❤️</p>
+        <a href="#" class="button" id="si">SI 🥰</a>
+        <a href="#" class="button" id="no">NO 🥲</a>
+    </h1>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    let si=document.getElementById('si');
+    si.addEventListener("click",function(e){
+        swal("Sabia que dirias que si 🥰")
+        .then(() => {
+            swal("Te amo uwuuuuu...")
+            .then(() =>{
+                swal("Realmente me ase feliz estar tu lado ♥.")
+                .then(() =>{
+                    swal("Quieres saber lo que siento por ti ?...")
+                    .then(() =>{
+                        swal("Esta bien te lo dire. ❤️")
+                            .then(() =>{
+          swal(" Lo quie siento ti es AMOR, CARIÑO, RESPETO,ADMIRACION y muchas                                      cosas más 🥰")
+          .then(() =>{
+                   swal(" Y ME ENCANTA TUS CACHETITOS HERMOSOS DIVINOS                                                      🥰 ")
+                                .then(() =>{
+                       swal("Gracias por estar a mi lado mi amorcito liz 🥰")
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+
+        });
+    });
+    let no=document .getElementById('no');
+    no.addEventListener("mousemove",function(e){
+    let x = Math.round( Math.random() * 90);
+    let y = Math.round( Math.random() * 80);
+    no.style.left = x+"%";
+    no.style.top = y+"%";
+    } );
+</script>
+</body>
+</html>
